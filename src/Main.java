@@ -4,15 +4,18 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int a = 0;
-        outTheInput(a);
-
-    }
-    public static void outTheInput(int a)
-    {
+        int a;
+        int b;
         Scanner sc = new Scanner(System.in);
         a = sc.nextInt();
-        System.out.print(a);
+        b = sc.nextInt();
+        System.out.print(sum(a, b));
+
     }
+    public static int sum(int a, int b)
+    {
+        return a + b;
+    }
+
 
 }
