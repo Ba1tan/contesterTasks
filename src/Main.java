@@ -4,19 +4,18 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int a;
-        int b;
+        int x;
+        int y;
+        int z;
         Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        b = sc.nextInt();
+        x = sc.nextInt();
+        y = sc.nextInt();
+        z = sc.nextInt();
 
-        System.out.print(product(a, b));
+        System.out.print(x * x + y - z / 2);
 
     }
-    public static int product(int a, int b)
-    {
-        return a * b;
-    }
+
 
 
 }
