@@ -10,12 +10,12 @@ public class Main {
         a = sc.nextInt();
         b = sc.nextInt();
 
-        System.out.print(sum(a, b));
+        System.out.print(product(a, b));
 
     }
-    public static int sum(int a, int b)
+    public static int product(int a, int b)
     {
-        return a + b;
+        return a * b;
     }
 
 
