@@ -7,21 +7,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         x = sc.nextInt();
         y = sc.nextInt();
-        diff(x, y);
+        System.out.print(average(x, y));
     }
-    public static void diff(int x, int y)
+    public static double average(int x, int y)
     {
-        if(x < y)
-        {
-            System.out.print('<');
-        }
-        if(x > y)
-        {
-            System.out.print('>');
-        }
-        else
-        {
-            System.out.print('=');
-        }
+        return (x + y) / 2.0;
     }
 }
