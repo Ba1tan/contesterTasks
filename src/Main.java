@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         int x;
@@ -9,24 +7,21 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         x = sc.nextInt();
         y = sc.nextInt();
-        if(isMultiple(x, y) == true)
+        diff(x, y);
+    }
+    public static void diff(int x, int y)
+    {
+        if(x < y)
         {
-            System.out.print("Yes");
+            System.out.print('<');
+        }
+        if(x > y)
+        {
+            System.out.print('>');
         }
         else
         {
-            System.out.print("No");
+            System.out.print('=');
         }
     }
-    public static boolean isMultiple(int x, int y)
-    {
-        if(x % y == 0)
-        {
-            return true;
-        }
-        return false;
-    }
-
-
-
 }
