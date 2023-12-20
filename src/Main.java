@@ -6,14 +6,25 @@ public class Main {
     public static void main(String[] args) {
         int x;
         int y;
-        int z;
         Scanner sc = new Scanner(System.in);
         x = sc.nextInt();
         y = sc.nextInt();
-        z = sc.nextInt();
-
-        System.out.print(x * x + y - z / 2);
-
+        if(isMultiple(x, y) == true)
+        {
+            System.out.print("Yes");
+        }
+        else
+        {
+            System.out.print("No");
+        }
+    }
+    public static boolean isMultiple(int x, int y)
+    {
+        if(x % y == 0)
+        {
+            return true;
+        }
+        return false;
     }
 
 
