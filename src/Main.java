@@ -7,10 +7,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         x = sc.nextInt();
         y = sc.nextInt();
-        System.out.print(average(x, y));
+        System.out.print(remainder(x, y));
     }
     public static double average(int x, int y)
     {
         return (x + y) / 2.0;
+    }
+    public static int remainder(int x, int y)
+    {
+        return x % y;
     }
 }
